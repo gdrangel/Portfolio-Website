@@ -62,7 +62,7 @@ h1 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-	margin-top: 150px;
+	margin-top: 75px;
 }
 
 h2 {
@@ -227,7 +227,7 @@ img:not(.buh), .bio, .position-statement, .contact, .cases {
         align-items: flex-start;
         gap: 2rem;
         width: 100%;
-        padding-top: 150px;
+        padding-top: 0px;
     }
 
 	h1 {
