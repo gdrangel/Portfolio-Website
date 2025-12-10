@@ -107,7 +107,7 @@ main {
 }
 
 section, .bio, .position-statement, .contact {
-    width: 80%;
+    width: 90%;
     margin: 0 auto 1.5rem auto;
 }
 
