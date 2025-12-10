@@ -107,7 +107,7 @@ main {
 }
 
 section, .bio, .position-statement, .contact {
-    width: 90%;
+    width: 80%;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -176,7 +176,7 @@ header nav a {
 
 .cases {
     background: var(--white);
-    width: 90%;
+    width: 80%;
     margin: 1.5rem auto;
     padding: 1rem;
     border-radius: 10px;
@@ -186,9 +186,10 @@ header nav a {
 }
 
 .cases img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 .caselink {
