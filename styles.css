@@ -105,6 +105,13 @@ section, .bio, .position-statement, .contact {
     z-index: 1000;
 }
 
+nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
 #logo img {
     width: 48px;
     height: auto;
@@ -112,7 +119,6 @@ section, .bio, .position-statement, .contact {
 
 header nav {
     margin-left: 70px;
-    padding: 15px 10px;
 }
 
 header nav ul {
@@ -120,16 +126,20 @@ header nav ul {
     gap: 1rem;
 }
 
+header nav ul li{
+    background-color: var(--purple);
+    padding: 15px 10px;
+}
+
 header nav a {
     text-decoration: none;
-    color: var(--purple);
+    color: var(--white);
 }
 
 .headshot img {
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
     height: auto;
-    border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
