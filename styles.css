@@ -71,10 +71,18 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.45;
+}
+
+.indented-text {
+    text-indent: 1.5em;
 }
 
 .position-statement p {
@@ -99,7 +107,7 @@ main {
 }
 
 section, .bio, .position-statement, .contact {
-    width: 90%;
+    width: 80%;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -153,13 +161,17 @@ header nav a {
     width: 100%;
     max-width: 330px;
     display: block;
-    margin: 0.5rem auto 1.5rem auto;
+    margin: auto auto 1.5rem auto;
 }
 
 .bio, .position-statement, .contact {
     background: var(--white);
     padding: 1rem;
     border-radius: 10px;
+}
+
+.contact {
+	text-align: center;
 }
 
 .cases {
@@ -179,11 +191,15 @@ header nav a {
     border-radius: 8px;
 }
 
-.cases a {
+.caselink {
     color: var(--purple);
-    text-decoration: underline;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 img:not(.buh), .bio, .position-statement, .contact, .cases {
 	border: 5px solid var(--purple);
 }
+
