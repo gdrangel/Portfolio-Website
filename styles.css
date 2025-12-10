@@ -62,6 +62,7 @@ h1 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
+	margin-top: 150px;
 }
 
 h2 {
@@ -101,9 +102,9 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-main {
+.order {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 section, .bio, .position-statement, .contact {
@@ -113,8 +114,8 @@ section, .bio, .position-statement, .contact {
 
 #logo {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     z-index: 1000;
 }
 
@@ -139,7 +140,7 @@ header nav ul {
     gap: 1rem;
 }
 
-header nav ul li{
+header nav ul li {
     background-color: var(--purple);
     padding: 15px 10px;
 }
@@ -147,6 +148,18 @@ header nav ul li{
 header nav a {
     text-decoration: none;
     color: var(--white);
+}
+
+.first, .second {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	border-radius: 0 0 0 10px;
+	box-shadow: -5px 0px 5px -5px black;
+}
+
+.first {
+	padding-right: 100px;
 }
 
 .headshot img {
@@ -194,7 +207,9 @@ header nav a {
 
 .caselink {
     color: var(--purple);
+	font-size: 1rem;
     text-decoration: none;
+	font-weight: bold;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -204,3 +219,87 @@ img:not(.buh), .bio, .position-statement, .contact, .cases {
 	border: 5px solid var(--purple);
 }
 
+@media (min-width: 900px) {
+
+    .order {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        width: 100%;
+        padding-top: 150px;
+    }
+
+	h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    .position-statement p {
+        font-size: 1.75rem;
+    }
+
+	.first, .second {
+		border-radius: 0 0 0 50px;
+		box-shadow: -5px 0px 10px -5px black;
+	}
+
+	.first {
+		padding-right: 250px;
+	}
+
+	header nav ul {
+		gap: 0;
+	}
+
+	#logo img {
+		width: 120px;
+	}
+
+	.headshot img {
+		max-width: 400px;
+	}
+
+	.nameplate img {
+		max-width: 410px;
+	}
+
+	header nav ul li {
+		padding: 48px 50px;
+	}
+
+    .cases {
+        flex-direction: column;
+        align-items: center;
+		max-width: 550px;
+    }
+
+    .cases img {
+        width: 75%;
+        margin: 0;
+    }
+
+    .cases div {
+        width: 90%;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .cases p {
+        text-indent: 1.5em;
+    }
+
+}
